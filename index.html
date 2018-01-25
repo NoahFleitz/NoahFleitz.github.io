@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Noah Fleitz</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #333;
+        }
+        
+        h1 {
+            border-radius: 8px;
+            margin: auto 0;
+            text-align: center;
+            padding: 20px 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+            font-family: sans-serif;
+            font-size: 8vw;
+            letter-spacing: .1em;
+            background: #405DA9;
+            color: #fff;
+            text-shadow: 0 5px 2px rgba(0, 0, 0, .2);
+            overflow: hidden;
+        }
+        
+        h1:before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(img/Louisville.png);
+            background-size: cover;
+            z-index: -1;
+            -webkit-animation: animateBefore 10s linear infinite;
+            animation: animateBefore 10s linear infinite;
+            -webkit-transition: .5s;
+            transition: .5s;
+        }
+        
+        h1:hover:before {
+            top: 0;
+        }
+        
+        h1:after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(img/Skyline.png);
+            background-size: cover;
+            z-index: 1;
+            -webkit-animation: animateAfter 10s linear infinite;
+            animation: animateAfter 10s linear infinite;
+            -webkit-transition: .5s;
+            transition: .5s;
+        }
+        
+        h1:hover:after {
+            top: 50px;
+        }
+        
+        @-webkit-keyframes animateBefore {
+            0% {
+                background-position: 0%;
+            }
+            100% {
+                background-position: 100%;
+            }
+        }
+        
+        @keyframes animateBefore {
+            0% {
+                background-position: 0%;
+            }
+            100% {
+                background-position: 100%;
+            }
+        }
+        
+        @-webkit-keyframes animateAfter {
+            0% {
+                background-position: 0%;
+            }
+            100% {
+                background-position: 100%;
+            }
+        }
+        
+        @keyframes animateAfter {
+            0% {
+                background-position: 0%;
+            }
+            100% {
+                background-position: 100%;
+            }
+        }
+        
+        #icons {
+            position: absolute;
+            text-align: center;
+            width: 100vw;
+            top: 85%;
+            font-size: 2em;
+        }
+        
+        i {
+            padding: 10px;
+            color: #fff;
+            -webkit-transition: .5s;
+            transition: .5s;
+        }
+        
+        i:hover {
+            color: #405DA9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Noah Fleitz</h1>
+    <div id="icons"><a href="https://github.com/burningPluto" target="_blank"><i class="fa fa-github"></i></a><a href="https://www.linkedin.com/in/noah-fleitz-337436116/" target="_blank"><i class="fa fa-linkedin"></i></a><a href="https://codepen.io/NoahFleitz/" target="_blank"><i class="fa fa-codepen"></i></a><a href="https://medium.com/@noahfleitz" target="_blank"><i class="fa fa-medium"></i></a><a href="https://twitter.com/NoahJrFleitz" target="_blank"><i class="fa fa-twitter"></i></a><a href="mailto:noahjrfleitz@rocketmail.com"><i class="fa fa-envelope"></i></a></div>
+</body>
+
+</html>
